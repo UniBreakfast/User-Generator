@@ -2,7 +2,7 @@ const btn = document.getElementsByClassName("gen")[0];
 const out = document.getElementById("out");
 
 let users = "Микита, Сергій, Дмитро, Ольга, Ганна, Юлія, Вікторія, Євгеній, Єгор, Артем, Віталій, Назар".split(", ");
-let lastPicks = JSON.parse(localStorage.getItem("lastPicks"));
+let lastPicks = JSON.parse(localStorage.getItem("lastPicks")) || [];
 
 btn.onclick = pickUser;
 
